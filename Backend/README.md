@@ -75,3 +75,4 @@ Sucrase = to use the new sintax of JS, like import ... from ...;
 sequelize = to use migrations with database
 sequelize-cli = line command interface to execute, create, remove migrations with sequelize
 pg, pg-hstore = packages to use the postgress database
+bcryptjs = package to use hashes in password
