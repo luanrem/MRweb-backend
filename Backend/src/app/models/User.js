@@ -31,6 +31,10 @@ class User extends Model {
     return this;
   }
 
+  static associate(models) {
+    this.belongsTo(models.Avatar, { foreignKey: 'avatar_id' });
+  }
+
   // Verify the password
   checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
