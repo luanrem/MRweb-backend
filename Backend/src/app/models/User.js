@@ -16,6 +16,7 @@ class User extends Model {
       cell_phone: Sequelize.STRING,
       phone: Sequelize.STRING,
       ex_participant: Sequelize.BOOLEAN,
+      rama_function: Sequelize.INTEGER,
     },
     {
       sequelize,
