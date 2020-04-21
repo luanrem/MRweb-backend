@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken';
 
 import User from '../models/User';
-import Avatar from '../models/Avatar';
 import authConfig from '../../config/auth';
 
 class SessionController {
@@ -35,17 +34,6 @@ class SessionController {
     })
   }
 
-  async index(req, res) {
-    const user = await User.findByPk(req.userId,
-      {
-        include: [Avatar
-  
-        ]
-      }
-    );
-
-    return res.json({ user });
-  }
 }
 
 export default new SessionController();

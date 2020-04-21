@@ -1,4 +1,5 @@
 import User from '../models/User';
+import Avatar from '../models/Avatar';
 
 class UserController {
   async store(req, res) {
@@ -48,6 +49,18 @@ class UserController {
       email,
       provider,
      });
+  }
+
+  async index(req, res) {
+    const user = await User.findByPk(req.userId,
+      {
+        include: [Avatar
+  
+        ]
+      }
+    );
+
+    return res.json({ user });
   }
 }
 

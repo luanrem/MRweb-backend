@@ -20,8 +20,7 @@ routes.post('/sessions', SessionController.store);
 routes.use(authMiddleware);
 
 routes.put('/users', UserController.update);
-
-routes.get('/sessions', SessionController.index);
+routes.get('/users', UserController.index);
 
 routes.post('/avatar', upload.single('avatar'), AvatarController.store);
 
