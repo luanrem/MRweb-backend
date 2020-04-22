@@ -7,7 +7,6 @@ export const Container = styled.header`
   align-items: center;
   padding: 30px;
   flex-direction: row;
-  max-width: 1366px;
   background: transparent;
 
   .search {
@@ -18,20 +17,29 @@ export const Container = styled.header`
 
 export const Titulo = styled.ul`
   list-style: none;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   li {
     display: inline-block;
     padding: 0px 20px;
+    cursor: pointer;
   }
 
-  li a {
-    transition: all 0.3s ease 0s;
-
+  li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .4s;
   }
 
-  li a:hover {
-    color: #0088a9;
+  li a:hover::after {
+    width: 100%;
+    transition: width .4s;
   }
+
 
   `;
 
