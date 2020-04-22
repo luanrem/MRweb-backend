@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HeaderMain from './components/HeaderMain';
+
+import Routes from './routes';
+import GlobalStyle from './styles/global';
 
 function App() {
   return (
-    <div className="App">
-    <HeaderMain />
-    </div>
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
   );
 }
 

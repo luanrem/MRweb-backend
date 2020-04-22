@@ -7,8 +7,8 @@ import Header from '../components/header';
 export default function Main() {
   return (
     <>
-    <Header />
-    <Title>Hello World</Title>
+      <Header />
+      <Title>Hello World</Title>
     </>
   );
 }
