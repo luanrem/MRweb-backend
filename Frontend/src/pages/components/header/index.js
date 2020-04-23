@@ -2,13 +2,15 @@ import React from 'react';
 
 import { GoSearch } from 'react-icons/go';
 
-import { Container, Titulo, Profile } from './styles';
+import Profile from '../profile';
+
+import { Container, Titulo } from './styles';
 
 export default function Header() {
   return (
     <Container>
       <div className="search">
-      <GoSearch size={36} />
+      <GoSearch size={26} />
       </div>
 
       <Titulo>
@@ -19,7 +21,7 @@ export default function Header() {
         <li><a>Contato</a></li>
       </Titulo>
 
-      <Profile>Pessoa</Profile>
+      <Profile />
 
     </ Container>
   );

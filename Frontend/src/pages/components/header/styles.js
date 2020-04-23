@@ -46,4 +46,5 @@ export const Titulo = styled.ul`
   export const Profile = styled.h1`
     color: #333;
     padding-left: 100px;
+
   `;
