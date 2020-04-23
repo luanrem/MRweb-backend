@@ -8,6 +8,11 @@ export const Container = styled.header`
   padding: 30px;
   flex-direction: row;
   background: transparent;
+  max-width: 2000px;
+  margin: 0px auto;
+
+
+
 
   .search {
     cursor: pointer;
@@ -31,7 +36,7 @@ export const Titulo = styled.ul`
     display: block;
     width: 0;
     height: 2px;
-    background: black;
+    background: #fff;
     transition: width .4s;
   }
 
