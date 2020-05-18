@@ -11,8 +11,10 @@ export const Container = styled.header`
   max-width: 2000px;
   margin: 0px auto;
 
+  color: white;
 
 
+  background-image: linear-gradient(to bottom, black, transparent);
 
   .search {
     cursor: pointer;
@@ -22,7 +24,7 @@ export const Container = styled.header`
 
 export const Titulo = styled.ul`
   list-style: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   li {

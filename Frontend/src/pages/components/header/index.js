@@ -17,7 +17,7 @@ export default function Header() {
         <li><a>Quem somos nós</a></li>
         <li><a>Como Participar</a></li>
         <li><a>Nossa Meta</a></li>
-        <li><a>Galeria</a></li>
+        <li><a>Galeria de atividades</a></li>
         <li><a>Contato</a></li>
       </Titulo>
 

@@ -7,6 +7,7 @@ export default createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
     justify-items: center;
+    display: 0 auto;
   }
 
   html, body, #root {
@@ -27,4 +28,5 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
 `;
