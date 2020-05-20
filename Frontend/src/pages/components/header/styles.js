@@ -9,7 +9,6 @@ export const Container = styled.header`
   flex-direction: row;
   background: transparent;
   max-width: 2000px;
-  margin: 0px auto;
 
   color: white;
 
