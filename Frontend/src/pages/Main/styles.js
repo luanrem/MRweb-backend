@@ -71,7 +71,7 @@ export const Banner = styled.div`
   width: 100%;
   max-width: 2000px;
   margin: 0px auto;
-  border-radius: ${props => props.br ? `0 0 0 80% / 25%` : `0`};
+  /*border-radius: ${props => props.br ? `0 0 0 80% / 25%` : `0`};*/
 
   display: flex;
   justify-content: center;
@@ -123,7 +123,7 @@ export const ContentOne = styled.div`
 
     .content {
       display: flex;
-      flex-direction: space-between;
+      flex-direction: row;
       align-items: center;
 
       width: 900px;
@@ -149,4 +149,69 @@ export const ContentTwo = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 2000px;
+
+  padding: 50px 20px;
+
+  .nossaMeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    h1 {
+      font-size: 30px;
+      padding-top: 40px;
+    }
+  }
+
+  hr {
+      display: block;
+      height: 4px;
+      border-width: 0;
+      color: #eee;
+      background-color: rgba(199,199,199,1);
+      width: 650px;
+
+      max-width: 50px;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+  .quadros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    h3 {
+      font-size: 23px;
+      padding: 15px;
+      padding-top: 25px;
+    }
+
+    .quadro {
+
+      ul {
+        list-style-type: circle;
+      }
+      li {
+          width: 800px;
+          margin-left: 15px;
+          font-size: 20px;
+          line-height: 1.5;
+          color: #696969;
+      }
+
+      h2 {
+        font-size: 23px;
+        line-height: 1.5;
+
+        padding-top: 10px;
+      }
+
+    }
+
+  }
 `;
