@@ -1,10 +1,10 @@
 module.exports = {
-  dialect: 'postgres',
+  dialect: 'mysql',
   host: 'localhost',
-  port: '5433',
-  username: 'postgres',
-  password: 'docker',
-  database: 'missaorama',
+  port: '3306',
+  username: 'root',
+  password: 'root',
+  database: 'RAMA',
   define: {
     timestamps: true,
     underscored: true,
