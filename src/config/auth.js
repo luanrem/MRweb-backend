@@ -1,4 +1,4 @@
 export default {
-  secret: 'parameterthatonlythedevhaveaccess',
+  secret: process.env.APP_SECRET,
   expires: '1h',
 };
