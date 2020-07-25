@@ -16,6 +16,8 @@ const upload = multer(multerConfig);
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
 
+routes.get('/', (req, res) => res.send('Missão Rama API rodando, utilize o insomnia para acessar'));
+
 // All next routes that comes after routes.use(<mid>) will use the <mid> middleware
 routes.use(authMiddleware);
 
